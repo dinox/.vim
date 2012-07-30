@@ -1,5 +1,5 @@
 syn on
-set ts=4 sw=2 et
+set ts=4 sw=4 et
 set ai
 colo dante
 set hidden

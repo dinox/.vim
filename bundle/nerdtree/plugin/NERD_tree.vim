@@ -68,7 +68,7 @@ call s:initVariable("g:NERDTreeShowFiles", 1)
 call s:initVariable("g:NERDTreeShowHidden", 0)
 call s:initVariable("g:NERDTreeShowLineNumbers", 0)
 call s:initVariable("g:NERDTreeSortDirs", 1)
-call s:initVariable("g:NERDTreeDirArrows", !s:running_windows)
+call s:initVariable("g:NERDTreeDirArrows", s:running_windows)
 call s:initVariable("g:NERDTreeCasadeOpenSingleChildDir", 1)
 
 if !exists("g:NERDTreeSortOrder")
@@ -171,6 +171,7 @@ command! -n=1 -complete=customlist,s:completeBookmarks -bar NERDTreeFromBookmark
 command! -n=0 -bar NERDTreeMirror call s:initNerdTreeMirror()
 command! -n=0 -bar NERDTreeFind call s:findAndRevealPath()
 command! -n=0 -bar NERDTreeFocus call NERDTreeFocus()
+
 " SECTION: Auto commands {{{1
 "============================================================
 augroup NERDTree

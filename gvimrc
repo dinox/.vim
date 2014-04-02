@@ -1,5 +1,6 @@
 set go-=T
-set bg=dark
+set bg=light
+colorscheme solarized
 if &background == "dark"
     hi normal guibg=black
     set transp=8
